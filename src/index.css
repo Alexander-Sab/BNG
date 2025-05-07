@@ -1,0 +1,39 @@
+@import './styles/variables.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* color: #f19ae6; */
+  overflow-x: hidden; /* Блокируем горизонтальную прокрутку */
+  min-height: 100vh; /* Минимальная высота на весь экран */
+}
+
+/* Основной контейнер для контента */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; /* Важно добавить */
+  position: relative; /* Для корректного позиционирования */
+  z-index: 2; /* Должен быть выше фона */
+}
+
+/* Если используете компонент с основным контентом */
+.content-wrapper {
+  width: 100%;
+  overflow: visible; /* Разрешаем естественное поведение */
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  body {
+    font-size: 14px; /* Уменьшаем базовый размер шрифта */
+  }
+}

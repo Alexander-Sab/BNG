@@ -1,0 +1,42 @@
+.map-wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .map-container {
+    width: 100% !important;
+    height: 400px !important;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .mesto {
+    color: var(--oglh2);
+    text-transform: uppercase;
+
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 15px 0;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase; /* Опционально: сделать текст заглавными */
+
+    background-color: rgba(0, 0, 0, 0.356); /* Тёмный полупрозрачный фон */
+    padding: 5px;
+    border: 1px s;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .map-container {
+      height: 300px !important;
+    }
+  }

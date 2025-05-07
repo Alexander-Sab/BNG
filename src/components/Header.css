@@ -1,0 +1,38 @@
+
+/* Стиль только для блока обязанностей */
+.header {
+    background-color: rgba(180, 180, 180, 0.336); /* Тёмный полупрозрачный фон */
+    padding: 25px;
+    border: 1px s ;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: #800000;  /* Бордовый цвет в HEX */
+    font-size: 38px;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase; /* Опционально: сделать текст заглавными */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .header-p1 {
+    color: #800000;  /* Бордовый цвет в HEX */
+    font-size: 38px;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase; /* Опционально: сделать текст заглавными */
+  }
+
+  .header-p2 {
+    color: #000000;  /* Бордовый цвет в HEX */
+    font-size: 38px;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase; /* Опционально: сделать текст заглавными */
+
+  }
