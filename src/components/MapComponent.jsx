@@ -87,6 +87,8 @@ export default function YandexMap() {
     <div className="map-wrapper">
     <div className="mesto">
         <h3 className="mesto-m">месторасположение подразделения</h3>
+        <h4>адрес: ул. Тушинская 9, к.3 </h4>
+        <p>график работы: с 09 ч. 00 мин. до 18 ч. 00 мин.</p>
     </div>
       <div ref={mapRef} className="map-container" />
     </div>
