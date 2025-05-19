@@ -10,7 +10,7 @@
 }
 
 .header h1 {
-    color: #800000;  /* Бордовый цвет в HEX */
+    color: var(--header-h1);  /* Бордовый цвет в HEX */
     font-size: 38px;
     margin: 0;
     padding: 15px 0;
@@ -19,7 +19,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   .header-p1 {
-    color: #800000;  /* Бордовый цвет в HEX */
+    color:var(--header-h1);  /* Бордовый цвет в HEX */
     font-size: 38px;
     margin: 0;
     padding: 15px 0;
