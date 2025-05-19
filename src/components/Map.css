@@ -16,7 +16,7 @@
 
   .mesto {
     color: rgb(235, 189, 189);
-    text-transform: uppercase;
+    text-transform: uppercase;/* Опционально: сделать текст заглавными */
 
     font-size: 1.1em;
     line-height: 1.6;
@@ -24,7 +24,7 @@
     margin: 0;
     padding: 15px 0;
     text-align: center;
-    text-transform: uppercase; /* Опционально: сделать текст заглавными */
+    
 
     background-color: rgba(0, 0, 0, 0.356); /* Тёмный полупрозрачный фон */
     padding: 5px;
@@ -32,6 +32,9 @@
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  mesto-m {
+    text-transform: uppercase !important;/* Опционально: сделать текст заглавными */
   }
   
   

@@ -1,37 +1,35 @@
-/* Стили для секции контактов */
 .section-contactInfo {
-    background-color: rgba(0, 0, 0, 0.6); /* Тёмный полупрозрачный фон */
-    padding: 25px;
-    border: 1px s;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Убедитесь, что нет pointer-events: none */
 }
 
 .section-contactInfo.contacts-list ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0; /* Дополнительно убираем margin */
-  }
-  
-  /* Стили для ссылок */
-  .cont-a {
-    color: #3366ff;
-    text-decoration: none;
-    transition: all 0.2s ease; /* Плавные переходы */
-    pointer-events: auto !important; /* Разрешаем события мыши */
-    cursor: pointer; /* Меняем курсор на "указатель" */
-  }
-  
-  
-  /* Эффект при наведении */
-  .cont-a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
-  }
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
 
-  .cont-li {
-    color: var(--text);
-    font-size: 1.1em;    /* Увеличиваем размер шрифта */
-    font-weight: bold;   
-  }
+.cont-a {
+   pointer-events: auto !important; /* Принудительно включить */
+  color: #3366ff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block; /* Для лучшей работы transition */
+}
+
+.cont-a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.cont-li {
+  color: var(--text);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px; /* Добавим отступ между пунктами */
+}
