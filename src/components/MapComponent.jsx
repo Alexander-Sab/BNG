@@ -82,14 +82,14 @@ export default function YandexMap() {
   }
 
   return (
-    <>
+    
     
     <div className="map-wrapper">
     <div className="mesto">
-        <p>месторасположение подразделения</p>
+        <h3 className="mesto-m">месторасположение подразделения</h3>
     </div>
       <div ref={mapRef} className="map-container" />
     </div>
-    </>
+   
   );
 }

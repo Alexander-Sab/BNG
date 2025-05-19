@@ -15,7 +15,7 @@
   }
 
   .mesto {
-    color: var(--oglh2);
+    color: rgb(235, 189, 189);
     text-transform: uppercase;
 
     font-size: 1.1em;
