@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import './AboutPage.css';
 
+// Импортируем изображения (замените на ваши реальные файлы)
+import car1 from './car1.jpg';
+import car2 from './car2.jpg';
+import car3 from './car3.jpg';
+
 const AboutPage = () => {
   const navigate = useNavigate();
 
@@ -33,11 +38,22 @@ const AboutPage = () => {
         </div>
       </section>
       
-      <section className="about-section">
+      <section className="about-section vehicle-section">
         <h2>Новый автотранспорт</h2>
         <p>Мы располагаем современным парком транспортных средств...</p>
         <div className="vehicle-gallery">
-          {/* Здесь можно разместить фото транспорта */}
+          <div className="vehicle-item">
+            <img src={car1} alt="Компактный городской автомобиль" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={car2} alt="Вместительный микроавтобус" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={car3} alt="Грузовой транспорт" />
+           
+          </div>
         </div>
       </section>
       
