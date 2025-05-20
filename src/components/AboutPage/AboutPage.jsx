@@ -7,6 +7,19 @@ import './AboutPage.css';
 import car1 from './car1.jpg';
 import car2 from './car2.jpg';
 import car3 from './car3.jpg';
+import car4 from './car4.jpg';
+import car5 from './car5.jpg';
+import car6 from './car6.jpg';
+
+import service1 from './picture-service/service1.jpg';
+import service2 from './picture-service/service2.jpg';
+import service3 from './picture-service/service3.jpg';
+import service4 from './picture-service/service4.jpg';
+import service5 from './picture-service/service5.jpg';
+import service6 from './picture-service/service6.jpg';
+import service7 from './picture-service/service7.jpg';
+import service8 from './picture-service/service8.jpg';
+import service9 from './picture-service/service9.jpg';
 
 const AboutPage = () => {
   const navigate = useNavigate();
@@ -22,12 +35,46 @@ const AboutPage = () => {
         >
           <FaArrowLeft />
         </button>
-        <h1>О нашей работе</h1>
+        {/* <h1>О нашей работе</h1> */}
       </div>
       
       <section className="about-section">
         <h2>Наше подразделение</h2>
-        <p>Мы - современная компания с сильным профессиональным коллективом...</p>
+        <p className="text2">Мы - современная компания с сильным профессиональным коллективом...</p>
+       <div className="vehicle-gallery">
+          <div className="vehicle-item">
+            <img src={service1} alt="Компактный городской автомобиль" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={service2} alt="Вместительный микроавтобус" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={service3} alt="Грузовой транспорт" />
+           
+          </div>
+          <div className="vehicle-item">
+            <img src={service4} alt="Компактный городской автомобиль" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={service5} alt="Вместительный микроавтобус" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={service6} alt="Грузовой транспорт" />
+          </div>
+          <div className="vehicle-item">
+            <img src={service7} alt="Грузовой транспорт" />
+          </div>
+          <div className="vehicle-item">
+            <img src={service8} alt="Грузовой транспорт" />
+          </div>
+           <div className="vehicle-item">
+            <img src={service9} alt="Грузовой транспорт" />
+          </div>
+        </div>
       </section>
       
       <section className="about-section">
@@ -52,6 +99,18 @@ const AboutPage = () => {
           </div>
           <div className="vehicle-item">
             <img src={car3} alt="Грузовой транспорт" />
+           
+          </div>
+          <div className="vehicle-item">
+            <img src={car4} alt="Компактный городской автомобиль" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={car5} alt="Вместительный микроавтобус" />
+            
+          </div>
+          <div className="vehicle-item">
+            <img src={car6} alt="Грузовой транспорт" />
            
           </div>
         </div>

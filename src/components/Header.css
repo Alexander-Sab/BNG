@@ -36,3 +36,29 @@
     text-transform: uppercase; /* Опционально: сделать текст заглавными */
 
   }
+
+  .button-icon-slugba {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.icon-slugba  {
+  position: fixed;
+  top: 2px;
+  left: 60px;
+  width: 80px; /* Настройте размер SVG */
+  height: 36px;
+  fill: #000; /* Измените цвет, если SVG поддерживает fill */
+}
+
+/* Дополнительные стили, если нужно */
+.about-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
