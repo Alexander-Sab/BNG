@@ -10,7 +10,7 @@
 }
 
 .header h1 {
-    color: #800000;  /* Бордовый цвет в HEX */
+    color: var(--header-h1);  /* Бордовый цвет в HEX */
     font-size: 38px;
     margin: 0;
     padding: 15px 0;
@@ -19,7 +19,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   .header-p1 {
-    color: #800000;  /* Бордовый цвет в HEX */
+    color:var(--header-h1);  /* Бордовый цвет в HEX */
     font-size: 38px;
     margin: 0;
     padding: 15px 0;
@@ -36,3 +36,29 @@
     text-transform: uppercase; /* Опционально: сделать текст заглавными */
 
   }
+
+  .button-icon-slugba {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.icon-slugba  {
+  position: fixed;
+  top: 2px;
+  left: 60px;
+  width: 80px; /* Настройте размер SVG */
+  height: 36px;
+  fill: #000; /* Измените цвет, если SVG поддерживает fill */
+}
+
+/* Дополнительные стили, если нужно */
+.about-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
