@@ -1,32 +1,34 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './AboutPage.css';
 
 // Импортируем изображения (замените на ваши реальные файлы)
-import car1 from './car1.jpg';
-import car2 from './car2.jpg';
-import car3 from './car3.jpg';
-import car4 from './car4.jpg';
-import car5 from './car5.jpg';
-import car6 from './car6.jpg';
+import car1 from './car1.webp';
+import car2 from './car2.webp';
+import car3 from './car3.webp';
+import car4 from './car4.webp';
+import car5 from './car5.webp';
+import car6 from './car6.webp';
 
-import service1 from './picture-service/service1.jpg';
-import service2 from './picture-service/service2.jpg';
-import service3 from './picture-service/service3.jpg';
-import service4 from './picture-service/service4.jpg';
-import service5 from './picture-service/service5.jpg';
-import service6 from './picture-service/service6.jpg';
-import service7 from './picture-service/service7.jpg';
-import service8 from './picture-service/service8.jpg';
-import service9 from './picture-service/service9.jpg';
+import service1 from './picture-service/service1.webp';
+import service2 from './picture-service/service2.webp';
+import service3 from './picture-service/service3.webp';
+import service4 from './picture-service/service4.webp';
+import service5 from './picture-service/service5.webp';
+import service6 from './picture-service/service6.webp';
+import service7 from './picture-service/service7.webp';
+import service8 from './picture-service/service8.webp';
+import service9 from './picture-service/service9.webp';
 
-import sport1 from './sport/sport1.jpg';
-import sport2 from './sport/sport2.jpg';
-import sport3 from './sport/sport3.jpg';
-import sport4 from './sport/sport4.jpg';
-import sport5 from './sport/sport5.jpg';
-import sport6 from './sport/sport6.jpg';
+import sport1 from './sport/sport1.webp';
+import sport2 from './sport/sport2.webp';
+import sport3 from './sport/sport3.webp';
+import sport4 from './sport/sport4.webp';
+import sport5 from './sport/sport5.webp';
+import sport6 from './sport/sport6.webp';
 
 
 const AboutPage = () => {
@@ -98,36 +100,45 @@ const AboutPage = () => {
 </div>
        <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={service1} alt="Компактный городской автомобиль" />
+            <LazyLoadImage  src={service1} alt="сотрудник и машина" loading="lazy" effect="blur"  width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={service2} alt="Вместительный микроавтобус" />
+            <LazyLoadImage  src={service2} alt="два сотрудника и машина" loading="lazy" effect="blur" width="100%"
+    height="auto" />
             
           </div>
           <div className="vehicle-item">
-            <img src={service3} alt="Грузовой транспорт" />
+            <LazyLoadImage  src={service3} alt="сотрудник машина с включенными мигалками" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={service4} alt="Компактный городской автомобиль" />
+            <LazyLoadImage  src={service4} alt="задержаны два нарушителя" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={service5} alt="Вместительный микроавтобус" />
+            <LazyLoadImage  src={service5} alt="задеражан один нарушитель" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={service6} alt="Грузовой транспорт" />
+            <LazyLoadImage  src={service6} alt="два бегущих сотрудника и машина" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
           </div>
           <div className="vehicle-item">
-            <img src={service7} alt="Грузовой транспорт" />
+            <LazyLoadImage  src={service7} alt="сотрудник с автоматом" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
           </div>
           <div className="vehicle-item">
-            <img src={service8} alt="Грузовой транспорт" />
+            <LazyLoadImage  src={service8} alt="сотрудник с пистолетом" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
           </div>
            <div className="vehicle-item">
-            <img src={service9} alt="Грузовой транспорт" />
+            <LazyLoadImage  src={service9} alt="сотрудник с пистолетом" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
           </div>
         </div>
       </section>
@@ -143,27 +154,27 @@ const AboutPage = () => {
 </div>
         <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={car1} alt="Компактный городской автомобиль" />
+            <img src={car1} alt="автопарк вид с переди" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car2} alt="Вместительный микроавтобус" />
+            <img src={car2} alt="автопарк вид с боку" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car3} alt="Грузовой транспорт" />
+            <img src={car3} alt="автопарк вид с переди с водителем" loading="lazy"  effect="blur"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={car4} alt="Компактный городской автомобиль" />
+            <img src={car4} alt="машины на дороге" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car5} alt="Вместительный микроавтобус" />
+            <img src={car5} alt="машина с боку" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car6} alt="Грузовой транспорт" />
+            <img src={car6} alt="машина москич Росгвардии" loading="lazy" effect="blur"/>
            
           </div>
         </div>
@@ -216,27 +227,27 @@ const AboutPage = () => {
 </div>
           <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={sport1} alt="Компактный городской автомобиль" />
+            <img src={sport1} alt="сотрудники на огневом рубеже" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport2} alt="Вместительный микроавтобус" />
+            <img src={sport2} alt="сотрудник с оружием" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport3} alt="Грузовой транспорт" />
+            <img src={sport3} alt="тренажорный зал" loading="lazy" effect="blur"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={sport4} alt="Компактный городской автомобиль" />
+            <img src={sport4} alt="сотрудник с стыкножм" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport5} alt="Вместительный микроавтобус" />
+            <img src={sport5} alt="сотрудник сдает кровь" loading="lazy" effect="blur"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport6} alt="Грузовой транспорт" />
+            <img src={sport6} alt="волебол" loading="lazy" effect="blur"/>
            
           </div>
         </div>
