@@ -2,6 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import  OptimizedImage  from './OptimizedImage/OptimizedImage'
+
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './AboutPage.css';
 
@@ -100,45 +103,36 @@ const AboutPage = () => {
 </div>
        <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <LazyLoadImage  src={service1} alt="сотрудник и машина" loading="lazy" effect="blur"  width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service1} alt="сотрудник и машина" />
             
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service2} alt="два сотрудника и машина" loading="lazy" effect="blur" width="100%"
-    height="auto" />
+            <OptimizedImage  src={service2} alt="два сотрудника и машина" />
             
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service3} alt="сотрудник машина с включенными мигалками" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service3} alt="сотрудник машина с включенными мигалками"/>
            
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service4} alt="задержаны два нарушителя" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service4} alt="задержаны два нарушителя"/>
             
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service5} alt="задеражан один нарушитель" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service5} alt="задеражан один нарушитель"/>
             
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service6} alt="два бегущих сотрудника и машина" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service6} alt="два бегущих сотрудника и машина"/>
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service7} alt="сотрудник с автоматом" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service7} alt="сотрудник с автоматом"/>
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage  src={service8} alt="сотрудник с пистолетом" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service8} alt="сотрудник с пистолетом"/>
           </div>
            <div className="vehicle-item">
-            <LazyLoadImage  src={service9} alt="сотрудник с пистолетом" loading="lazy" effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage  src={service9} alt="сотрудник с пистолетом"/>
           </div>
         </div>
       </section>
@@ -154,27 +148,31 @@ const AboutPage = () => {
 </div>
         <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={car1} alt="автопарк вид с переди" loading="lazy" effect="blur"/>
+            <OptimizedImage src={car1} alt="автопарк вид с переди" />
             
           </div>
           <div className="vehicle-item">
-            <img src={car2} alt="автопарк вид с боку" loading="lazy" effect="blur"/>
+            <OptimizedImage src={car2} alt="автопарк вид с боку"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car3} alt="автопарк вид с переди с водителем" loading="lazy"  effect="blur"/>
+            <LazyLoadImage src={car3} alt="автопарк вид с переди с водителем" loading="lazy"  effect="blur" width="100%"
+    height="auto"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={car4} alt="машины на дороге" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={car4} alt="машины на дороге" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car5} alt="машина с боку" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={car5} alt="машина с боку" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car6} alt="машина москич Росгвардии" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={car6} alt="машина москич Росгвардии" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
         </div>
@@ -227,27 +225,33 @@ const AboutPage = () => {
 </div>
           <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={sport1} alt="сотрудники на огневом рубеже" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={sport1} alt="сотрудники на огневом рубеже" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport2} alt="сотрудник с оружием" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={sport2} alt="сотрудник с оружием" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport3} alt="тренажорный зал" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={sport3} alt="тренажорный зал" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={sport4} alt="сотрудник с стыкножм" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={sport4} alt="сотрудник с стыкножм" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport5} alt="сотрудник сдает кровь" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={sport5} alt="сотрудник сдает кровь" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport6} alt="волебол" loading="lazy" effect="blur"/>
+            <LazyLoadImage src={sport6} alt="волебол" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
         </div>
