@@ -1,31 +1,26 @@
-// Создайте компонент для унифицированной загрузки изображений
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import './OptimizedImage.css'; // Создайте этот файл для стилей
 
 const OptimizedImage = ({ src, alt, placeholderColor }) => {
   return (
-    <LazyLoadImage
-      src={src}
-      alt={alt}
-      effect="blur"
-      width="100%"
-      height="auto"
-      loading="lazy"
-      placeholder={
-        <div 
-          style={{
-            backgroundColor: placeholderColor || '#f0f0f0',
-            width: '100%',
-            height: '100%'
-          }}
-        />
-      }
-      threshold={300} // Загружать когда до изображения осталось 300px
-      beforeLoad={() => {
-        // Можно добавить прелоадер
-        const img = new Image();
-        img.src = src;
-      }}
-    />
+    <div className="image-container">
+      <LazyLoadImage
+        src={src}
+        alt={alt}
+        effect="blur"
+        width="100%"
+        height="auto"
+        loading="lazy"
+        placeholder={
+          <div 
+            className="image-placeholder"
+            style={{ backgroundColor: placeholderColor || '#f0f0f0' }}
+          />
+        }
+        threshold={300}
+      />
+    </div>
   );
 };
-export default OptimizedImage
+
+export default OptimizedImage;

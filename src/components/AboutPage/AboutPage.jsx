@@ -62,8 +62,8 @@ const AboutPage = () => {
   <ul className="task-list">
     <li className="task-item">
       <div className="task-icon">🛡️</div>
-      <div>
-        <h3>Охрана объектов</h3>
+      <div className="task-h3">
+        <h3 >Охрана объектов</h3>
         <p>Круглосуточная охрана с применением современных систем контроля доступа</p>
       </div>
     </li>
@@ -156,8 +156,7 @@ const AboutPage = () => {
             
           </div>
           <div className="vehicle-item">
-            <LazyLoadImage src={car3} alt="автопарк вид с переди с водителем" loading="lazy"  effect="blur" width="100%"
-    height="auto"/>
+            <OptimizedImage src={car3} alt="автопарк вид с переди с водителем" />
            
           </div>
           <div className="vehicle-item">
