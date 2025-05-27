@@ -1,6 +1,6 @@
 import React from 'react';
 import './Background.css';
-import backgroundImage from './logo.jpg';
+import backgroundImage from './logo.webp';
 
 export default function Background({ children }) {
   return (

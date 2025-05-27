@@ -1,32 +1,37 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import  OptimizedImage  from './OptimizedImage/OptimizedImage'
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './AboutPage.css';
 
 // Импортируем изображения (замените на ваши реальные файлы)
-import car1 from './car1.jpg';
-import car2 from './car2.jpg';
-import car3 from './car3.jpg';
-import car4 from './car4.jpg';
-import car5 from './car5.jpg';
-import car6 from './car6.jpg';
+import car1 from './car1.webp';
+import car2 from './car2.webp';
+import car3 from './car3.webp';
+import car4 from './car4.webp';
+import car5 from './car5.webp';
+import car6 from './car6.webp';
 
-import service1 from './picture-service/service1.jpg';
-import service2 from './picture-service/service2.jpg';
-import service3 from './picture-service/service3.jpg';
-import service4 from './picture-service/service4.jpg';
-import service5 from './picture-service/service5.jpg';
-import service6 from './picture-service/service6.jpg';
-import service7 from './picture-service/service7.jpg';
-import service8 from './picture-service/service8.jpg';
-import service9 from './picture-service/service9.jpg';
+import service1 from './picture-service/service1.webp';
+import service2 from './picture-service/service2.webp';
+import service3 from './picture-service/service3.webp';
+import service4 from './picture-service/service4.webp';
+import service5 from './picture-service/service5.webp';
+import service6 from './picture-service/service6.webp';
+import service7 from './picture-service/service7.webp';
+import service8 from './picture-service/service8.webp';
+import service9 from './picture-service/service9.webp';
 
-import sport1 from './sport/sport1.jpg';
-import sport2 from './sport/sport2.jpg';
-import sport3 from './sport/sport3.jpg';
-import sport4 from './sport/sport4.jpg';
-import sport5 from './sport/sport5.jpg';
-import sport6 from './sport/sport6.jpg';
+import sport1 from './sport/sport1.webp';
+import sport2 from './sport/sport2.webp';
+import sport3 from './sport/sport3.webp';
+import sport4 from './sport/sport4.webp';
+import sport5 from './sport/sport5.webp';
+import sport6 from './sport/sport6.webp';
 
 
 const AboutPage = () => {
@@ -57,29 +62,29 @@ const AboutPage = () => {
   <ul className="task-list">
     <li className="task-item">
       <div className="task-icon">🛡️</div>
-      <div>
+      <div className="task-h3">
         <h3>Охрана объектов</h3>
         <p>Круглосуточная охрана с применением современных систем контроля доступа</p>
       </div>
     </li>
     <li className="task-item">
       <div className="task-icon">🚔</div>
-      <div>
+      <div className="task-h3">
         <h3>Группы оперативного реагирования</h3>
         <p>Мобильные наряды для задержания правонарушителей и пресечения преступлений</p>
       </div>
     </li>
     <li className="task-item">
       <div className="task-icon">👮</div>
-      <div>
-        <h3>Постовая служба</h3>
+      <div className="task-h3">
+        <h3 >Постовая служба</h3>
         <p>Обеспечение правопорядка на закреплённых территориях</p>
       </div>
     </li>
   </ul>
   
-  <div className="team-values">
-    <h3>Наши принципы:</h3>
+  <div className="team-values_h3">
+    <h3 className="team-values_h3">Наши принципы:</h3>
     <div className="values-grid">
       <div className="value-card">
         <h4>Взаимовыручка</h4>
@@ -98,36 +103,36 @@ const AboutPage = () => {
 </div>
        <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={service1} alt="Компактный городской автомобиль" />
+            <OptimizedImage  src={service1} alt="сотрудник и машина" />
             
           </div>
           <div className="vehicle-item">
-            <img src={service2} alt="Вместительный микроавтобус" />
+            <OptimizedImage  src={service2} alt="два сотрудника и машина" />
             
           </div>
           <div className="vehicle-item">
-            <img src={service3} alt="Грузовой транспорт" />
+            <OptimizedImage  src={service3} alt="сотрудник машина с включенными мигалками"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={service4} alt="Компактный городской автомобиль" />
+            <OptimizedImage  src={service4} alt="задержаны два нарушителя"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={service5} alt="Вместительный микроавтобус" />
+            <OptimizedImage  src={service5} alt="задеражан один нарушитель"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={service6} alt="Грузовой транспорт" />
+            <OptimizedImage  src={service6} alt="два бегущих сотрудника и машина"/>
           </div>
           <div className="vehicle-item">
-            <img src={service7} alt="Грузовой транспорт" />
+            <OptimizedImage  src={service7} alt="сотрудник с автоматом"/>
           </div>
           <div className="vehicle-item">
-            <img src={service8} alt="Грузовой транспорт" />
+            <OptimizedImage  src={service8} alt="сотрудник с пистолетом"/>
           </div>
            <div className="vehicle-item">
-            <img src={service9} alt="Грузовой транспорт" />
+            <OptimizedImage  src={service9} alt="сотрудник с пистолетом"/>
           </div>
         </div>
       </section>
@@ -143,27 +148,30 @@ const AboutPage = () => {
 </div>
         <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={car1} alt="Компактный городской автомобиль" />
+            <OptimizedImage src={car1} alt="автопарк вид с переди" />
             
           </div>
           <div className="vehicle-item">
-            <img src={car2} alt="Вместительный микроавтобус" />
+            <OptimizedImage src={car2} alt="автопарк вид с боку"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car3} alt="Грузовой транспорт" />
+            <OptimizedImage src={car3} alt="автопарк вид с переди с водителем" />
            
           </div>
           <div className="vehicle-item">
-            <img src={car4} alt="Компактный городской автомобиль" />
+            <LazyLoadImage src={car4} alt="машины на дороге" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car5} alt="Вместительный микроавтобус" />
+            <LazyLoadImage src={car5} alt="машина с боку" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={car6} alt="Грузовой транспорт" />
+            <LazyLoadImage src={car6} alt="машина москич Росгвардии" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
         </div>
@@ -177,10 +185,10 @@ const AboutPage = () => {
   
   <div className="sport-highlights">
     <div className="highlight-item">
-      <h3>Силовые тренировки</h3>
+      <h3 className="task-h3">Силовые тренировки</h3>
       <p> Тренажёрный зал с профессиональным оборудованием</p>
     </div>
-    <h3>Огневая и тактическая подготовка</h3>
+    <h3 className="task-h3">Огневая и тактическая подготовка</h3>
 <div className="firearm-training">
   <p>
     На базе современного тирового комплекса мы проводим:
@@ -216,27 +224,33 @@ const AboutPage = () => {
 </div>
           <div className="vehicle-gallery">
           <div className="vehicle-item">
-            <img src={sport1} alt="Компактный городской автомобиль" />
+            <LazyLoadImage src={sport1} alt="сотрудники на огневом рубеже" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport2} alt="Вместительный микроавтобус" />
+            <LazyLoadImage src={sport2} alt="сотрудник с оружием" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport3} alt="Грузовой транспорт" />
+            <LazyLoadImage src={sport3} alt="тренажорный зал" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
           <div className="vehicle-item">
-            <img src={sport4} alt="Компактный городской автомобиль" />
+            <LazyLoadImage src={sport4} alt="сотрудник с стыкножм" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport5} alt="Вместительный микроавтобус" />
+            <LazyLoadImage src={sport5} alt="сотрудник сдает кровь" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
             
           </div>
           <div className="vehicle-item">
-            <img src={sport6} alt="Грузовой транспорт" />
+            <LazyLoadImage src={sport6} alt="волебол" loading="lazy" effect="blur" width="100%"
+    height="auto"/>
            
           </div>
         </div>
