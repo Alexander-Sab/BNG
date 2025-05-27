@@ -18,7 +18,7 @@ export default function MainContent() {
 
         <section className="duties-section">
           <h2 className="ogl-h2">Условия</h2>
-          <ul className="text-1">
+          <ul className="text-1_ul">
             <li>Батальон Росгвардии дислоцируется в г. Москве. Охрана общественного правопорядка. Работа в составе автоэкипажа в группе задержания.</li>
             <li>график работы (1/3, 5/2);</li>
             <li>денежное довольствие 90 - 120 т.р., ежегодная индексация;</li>

@@ -1,9 +1,5 @@
 /* Основной контейнер страницы */
-.about-page {
-  position: relative; /* Добавляем это */
-  min-height: 100vh;
-  padding: 20px;
-}
+
 
 
 

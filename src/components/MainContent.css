@@ -38,7 +38,33 @@
 }
 
 .text-1 {
-  color: var(--text)
+  background: linear-gradient(to right, #E0E0E0, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.text-1_ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.text-1_ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  background: linear-gradient(to right, #E0E0E0, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-1_ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--oglh2); /* Красный цвет для маркера */
+  font-size: 1.2em; /* Немного увеличиваем размер точки */
 }
 
   
