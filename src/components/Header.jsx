@@ -15,7 +15,7 @@ export default function Header() {
           aria-label="Подробно о нашей работе"
         >
           <FaInfoCircle />
-          <span>О работе</span>
+          <span>О нас подробней</span>
         </button>
 
         <h1>Федеральная Служба ВНГ РФ</h1>
