@@ -18,6 +18,7 @@ const OptimizedImage = ({ src, alt, placeholderColor }) => {
           />
         }
         threshold={300}
+        visibleByDefault={true} // После загрузки изображение останется в DOM
       />
     </div>
   );

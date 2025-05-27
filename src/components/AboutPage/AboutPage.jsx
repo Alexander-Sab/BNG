@@ -63,28 +63,28 @@ const AboutPage = () => {
     <li className="task-item">
       <div className="task-icon">🛡️</div>
       <div className="task-h3">
-        <h3 >Охрана объектов</h3>
+        <h3>Охрана объектов</h3>
         <p>Круглосуточная охрана с применением современных систем контроля доступа</p>
       </div>
     </li>
     <li className="task-item">
       <div className="task-icon">🚔</div>
-      <div>
+      <div className="task-h3">
         <h3>Группы оперативного реагирования</h3>
         <p>Мобильные наряды для задержания правонарушителей и пресечения преступлений</p>
       </div>
     </li>
     <li className="task-item">
       <div className="task-icon">👮</div>
-      <div>
-        <h3>Постовая служба</h3>
+      <div className="task-h3">
+        <h3 >Постовая служба</h3>
         <p>Обеспечение правопорядка на закреплённых территориях</p>
       </div>
     </li>
   </ul>
   
-  <div className="team-values">
-    <h3>Наши принципы:</h3>
+  <div className="team-values_h3">
+    <h3 className="team-values_h3">Наши принципы:</h3>
     <div className="values-grid">
       <div className="value-card">
         <h4>Взаимовыручка</h4>
@@ -185,10 +185,10 @@ const AboutPage = () => {
   
   <div className="sport-highlights">
     <div className="highlight-item">
-      <h3>Силовые тренировки</h3>
+      <h3 className="task-h3">Силовые тренировки</h3>
       <p> Тренажёрный зал с профессиональным оборудованием</p>
     </div>
-    <h3>Огневая и тактическая подготовка</h3>
+    <h3 className="task-h3">Огневая и тактическая подготовка</h3>
 <div className="firearm-training">
   <p>
     На базе современного тирового комплекса мы проводим:

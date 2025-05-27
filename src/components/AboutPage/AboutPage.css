@@ -64,8 +64,13 @@
 }
 
 .about-section p {
-    color: var(--text);
+   background: linear-gradient(to right, #E0E0E0, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     font-size: 1.2em;
+    font-weight: 500;
 }
 
 .team-gallery, 
@@ -78,11 +83,8 @@
 }
 
 .task-h3 {
-  background: linear-gradient(to right, #E0E0E0, #FFFFFF);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  color: #F4DCB6;
+  
 }
 
 .task-h3 p {
@@ -124,9 +126,7 @@
   transition: transform 0.3s ease;
 }
 
-.vehicle-item:hover {
-  transform: translateY(-10px);
-}
+
 
 .vehicle-item img {
   width: 100%;
@@ -164,7 +164,7 @@
 
 .task-icon {
   font-size: 24px;
-  margin-top: 3px;
+  margin-top: 12px;
 }
 
 .values-grid {
@@ -174,11 +174,18 @@
   margin-top: 20px;
 }
 
+/* Наши принципы: */
+
 .value-card {
   background: #f8f8f8;
   padding: 15px;
   border-radius: 5px;
   border-left: 3px solid #cc0000;
+}
+
+.value-card p {
+  color: #0c0c0c;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .service-areas {
@@ -196,11 +203,22 @@
   border-radius: 5px;
 }
 
+/* Наши принципы: */
+
 .team-culture {
   margin-top: 30px;
   padding: 20px;
   background: #f0f0f0;
   border-radius: 5px;
+}
+
+.team-values_h3 {
+ color: var(--oglh2);
+  margin-bottom: 15px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 blockquote {
@@ -221,6 +239,13 @@ cite {
   gap: 15px;
   margin-top: 10px;
   flex-wrap: wrap;
+}
+
+.vehicle-advantages span {
+  color: var(--oglh2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .vehicle-features {
@@ -273,11 +298,34 @@ cite {
   border-left: 3px solid #d00;
 }
 
+.type-card h4 {
+  color: var(--oglh2);
+  margin-bottom: 15px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.type-card p {
+  color: #0c0c0c;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
 .training-motto {
   font-weight: bold;
   color: #900;
   text-align: center;
   margin-top: 20px;
+}
+
+.highlight-item h3 {
+  color: var(--oglh2);
+  margin-bottom: 15px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 768px) {
