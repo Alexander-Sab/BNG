@@ -1,3 +1,11 @@
+/* Основной контейнер страницы */
+.about-page {
+  position: relative; /* Добавляем это */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
 
 /* Стиль только для блока обязанностей */
 .header {
@@ -7,8 +15,57 @@
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+/* кнопка */
+.about-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  margin-top: -10px;
 }
 
+.about-button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .about-button {
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  
+  .header-p1, .header-p2 {
+    font-size: 1.1rem;
+  }
+}
+/* //// */
 .header h1 {
     color: var(--header-h1);  /* Бордовый цвет в HEX */
     font-size: 38px;
@@ -47,18 +104,3 @@
   
 }
 
-.icon-slugba  {
-  position: fixed;
-  top: 2px;
-  left: 60px;
-  width: 80px; /* Настройте размер SVG */
-  height: 36px;
-  fill: #000; /* Измените цвет, если SVG поддерживает fill */
-}
-
-/* Дополнительные стили, если нужно */
-.about-header {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
