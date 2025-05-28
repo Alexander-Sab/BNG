@@ -4,6 +4,8 @@
 
 /* Стиль только для блока обязанностей */
 .header {
+  position: relative; /* Для позиционирования иконки */
+  text-align: center;
     background-color: rgba(180, 180, 180, 0.336); /* Тёмный полупрозрачный фон */
     padding: 25px;
     border: 1px s ;
@@ -16,6 +18,19 @@
   padding: 20px;
   color: white;
 }
+/* иконка герб */
+.header-icon-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.header-icon {
+  width: 100px; /* Настройте по вашему вкусу */
+  height: auto;
+  object-fit: contain;
+}
+
 /* кнопка */
 /* Анимация мерцания */
 @keyframes shadowRun {

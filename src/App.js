@@ -7,6 +7,7 @@ import ContactInfo from './components/ContactInfo';
 import MapComponent from './components/MapComponent'; 
 import Sidebar from './components/Sidebar/Sidebar';
 import AboutPage from './components/AboutPage/AboutPage';
+import Footer from './components/Footer'; // Импортируем Footer
 
 function App() {
   return (
@@ -24,13 +25,18 @@ function App() {
                     <MainContent />
                     <MapComponent />
                     <ContactInfo />
+                    {/* Добавляем Footer здесь */}
                   </>
                 } />
-                <Route path="/about" element={<AboutPage />} />
+                <Route path="/about" element={<>
+                  <AboutPage />
+                  {/* И здесь, если нужно в about */}
+                </>} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
-            </div>
+            </div> 
           </div>
+          <Footer />
         </Background>
       </div>
     </Router>
