@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { FaInfoCircle } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
+import orelIcon from './orel.png';
 import './Header.css';
 
 export default function Header() {
@@ -48,6 +49,10 @@ export default function Header() {
   return (
     <div className="about-page">
       <header className="header">
+        {/* Добавляем иконку орла по центру */}
+        <div className="header-icon-container">
+          <img src={orelIcon} alt="Герб" className="header-icon" />
+        </div>
         <button 
           className="about-button"
           onClick={() => navigate('/about')}
