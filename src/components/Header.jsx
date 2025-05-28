@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaInfoCircle } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
 import orelIcon from './orel.png';
+import { Helmet } from 'react-helmet';
 import './Header.css';
 
 export default function Header() {
@@ -48,6 +49,18 @@ export default function Header() {
 
   return (
     <div className="about-page">
+       {/* SEO-метаданные */}
+      <Helmet>
+        <title>Работа в Росгвардии Москва - Вакансии в неведомственной охране</title>
+        <meta 
+          name="description" 
+          content="Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Открытые вакансии: полицейские, водители в неведомственной охране. Официальное трудоустройство, соцпакет." 
+        />
+        <meta 
+          name="keywords" 
+          content="работа росгвардия, вакансии москва, неведомственная охрана, служба внг рф, полицейский вакансии, водитель росгвардия" 
+        />
+      </Helmet>
       <header className="header">
         {/* Добавляем иконку орла по центру */}
         <div className="header-icon-container">
