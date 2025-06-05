@@ -3,6 +3,8 @@ import { FaInfoCircle } from 'react-icons/fa';
 import { useEffect, useRef, useState } from 'react';
 import orelIcon from './orel.png';
 import { Helmet } from 'react-helmet';
+
+
 import './Header.css';
 
 export default function Header() {
@@ -74,7 +76,7 @@ export default function Header() {
           <FaInfoCircle />
           <span>О нас подробней</span>
         </button>
-
+  
         <h1>федеральная Служба Войск национальной гвардии РФ</h1>
         <p className="header-p1">приглашает на работу<br />  в городе Москве:</p>
         <p className="header-p2">полицейских, полицейских (водителей)</p>

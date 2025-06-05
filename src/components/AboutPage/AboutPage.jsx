@@ -33,12 +33,17 @@ import sport4 from './sport/sport4.webp';
 import sport5 from './sport/sport5.webp';
 import sport6 from './sport/sport6.webp';
 
+import orel from '../orel.png';
+
 
 const AboutPage = () => {
   const navigate = useNavigate();
 
   return (
     <div className="about-page">
+      <div className="arms-container">
+                <img src={orel} alt="Герб" className="arms" />
+              </div>
       {/* Добавляем кнопку "Назад" вверху страницы */}
       <div className="about-header">
         <button 
