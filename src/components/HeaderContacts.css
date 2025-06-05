@@ -1,0 +1,47 @@
+.header-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 2px 50px 2px 0px;
+  flex-wrap: wrap;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white; /* Основной цвет текста - белый */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Тень для лучшей читаемости */
+}
+
+.contact-link {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease; /* Плавные переходы для всех свойств */
+  text-decoration: none;
+  color: inherit; /* Наследует цвет от родителя */
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.contact-link:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2); /* Легкий фон при наведении */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Усиленная тень при наведении */
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .telegram-link,
+  .email-link {
+    display: none;
+  }
+  
+  .header-contacts {
+    gap: 0;
+  }
+  
+  .phone-link {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.3); /* Более заметный фон для телефона */
+    padding: 6px 12px;
+  }
+}

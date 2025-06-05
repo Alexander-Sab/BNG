@@ -1,6 +1,6 @@
 .sidebar-toggle {
   position: fixed;
-  top: 1px;
+  top: 8px;
   left: 8px;
   z-index: 1001;
   background: rgba(0, 0, 0, 0.7);
