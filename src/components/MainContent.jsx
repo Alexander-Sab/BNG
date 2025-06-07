@@ -1,9 +1,32 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./MainContent.css";
 
 export default function MainContent() {
   return (
     <div className="content-wrapper">
+      {/* SEO-метаданные для контентной части */}
+      <Helmet>
+        <meta
+          name="description"
+          content="Вакансии в Росгвардии Москвы: обязанности полицейских и водителей, требования к кандидатам, условия службы в СЗАО (район Тушино)"
+        />
+        <meta
+          property="og:title"
+          content="Работа в Росгвардии СЗАО Москвы | Вакансии в неведомственной охране"
+        />
+        <meta
+          property="og:description"
+          content="Требования и условия работы в МОВО по СЗАО: зарплата 80-120 тыс. руб., график 1/3 или 5/2, компенсация за жильё, соцпакет"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          name="keywords"
+          content="работа росгвардия СЗАО, вакансии внг тушино, зарплата в росгвардии, мово по сзао, 
+          служба в группе задержания, работа полицейским водителем, соцпакет росгвардии, 
+          компенсация за аренду жилья москва, график работы сутки через трое"
+        />
+      </Helmet>
       <div className="text-content">
         <section className="duties-section">
           <h2 className="ogl-h2">Обязанности:</h2>
@@ -36,7 +59,7 @@ export default function MainContent() {
             <li>График работы: сутки через трое (1/3), пятидневка (5/2);</li>
             <li>
               Денежное довольствие{" "}
-              <span className="highlight-amount">90–120 тыс. руб.</span>,
+              <span className="highlight-amount">80–120 тыс. руб.</span>,
               ежегодная индексация;
             </li>
             <li>
