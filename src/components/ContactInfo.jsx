@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import './ContactInfo.css';
+import "./ContactInfo.css";
 
 export default function ContactInfo() {
   return (
@@ -8,20 +8,27 @@ export default function ContactInfo() {
       <h2 className="ogl-h2">Контакты</h2>
       <ul>
         <li className="cont-li">
-          Телефон: <a className="cont-a" href="tel:+79250571946">+7 925 057-19-46</a>
+          Телефон:{" "}
+          <a className="cont-a" href="tel:+79250571946">
+            +7 925 057-19-46
+          </a>
         </li>
         <li className="cont-li">
-          Telegram: <a 
-            className="cont-a" 
-            href="https://t.me/Aleksandr_Saprykin" 
-            target="_blank" 
+          Telegram:{" "}
+          <a
+            className="cont-a"
+            href="https://t.me/Aleksandr_Saprykin"
+            target="_blank"
             rel="noopener noreferrer"
           >
             @Aleksandr_Saprykin
           </a>
         </li>
         <li className="cont-li">
-          Email: <a className="cont-a" href="mailto:hr@company.com">hr@company.com</a>
+          Email:{" "}
+          <a className="cont-a" href="mailto:hr@company.com">
+            hr@company.com
+          </a>
         </li>
       </ul>
     </section>

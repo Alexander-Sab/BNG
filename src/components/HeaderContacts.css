@@ -34,14 +34,32 @@
   .email-link {
     display: none;
   }
-  
+
   .header-contacts {
     gap: 0;
   }
-  
+
   .phone-link {
     font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.3); /* Более заметный фон для телефона */
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.3
+    ); /* Более заметный фон для телефона */
     padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phone-link {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+  .header-contacts {
+    display: flex;
+    justify-content: center;
+
+    margin: 6px 130px 2px 0px;
   }
 }

@@ -1,21 +1,18 @@
-
 .content-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-  
 
-  
-  .text-content {
-    flex: 1;
-  }
-  
-  .section {
-    margin-bottom: 30px;
-  }
-  /* Стиль только для блока обязанностей */
+.text-content {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+/* Стиль только для блока обязанностей */
 .duties-section {
   background-color: rgba(0, 0, 0, 0.6); /* Тёмный полупрозрачный фон */
   padding: 25px;
@@ -34,15 +31,15 @@
 
 .ogl-h2 {
   color: var(--oglh2);
-   font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 .text-1 {
-  background: linear-gradient(to right, #E0E0E0, #FFFFFF);
+  background: linear-gradient(to right, #e0e0e0, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 .text-1_ul {
   list-style: none;
@@ -53,10 +50,10 @@
   position: relative;
   padding-left: 25px;
   margin-bottom: 8px;
-  
+
   -webkit-background-clip: text;
   background-clip: text;
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .text-1_ul li::before {
@@ -71,13 +68,12 @@
   color: brown;
 }
 
-  
-  @media (max-width: 768px) {
-    .content-wrapper {
-      flex-direction: column;
-    }
-    
-    .content-image {
-      width: 100%;
-    }
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
   }
+
+  .content-image {
+    width: 100%;
+  }
+}
