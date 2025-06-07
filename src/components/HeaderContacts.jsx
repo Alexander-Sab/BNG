@@ -1,9 +1,9 @@
 import React from "react";
 import "./HeaderContacts.css";
 
-function HeaderContacts() {
+function HeaderContacts({ isAboutPage = false }) {
   return (
-    <div className="header-contacts">
+    <div className={`header-contacts ${isAboutPage ? "about-page" : ""}`}>
       <a className="contact-link phone-link" href="tel:+79250571946">
         Телефон: +7 925 057-19-46
       </a>
