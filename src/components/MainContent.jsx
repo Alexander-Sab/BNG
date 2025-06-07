@@ -36,7 +36,7 @@ export default function MainContent() {
             <li>График работы: сутки через трое (1/3), пятидневка (5/2);</li>
             <li>
               Денежное довольствие{" "}
-              <span className="highlight-amount">90–120 тыс. руб.</span>,
+              <span className="highlight-amount">80–120 тыс. руб.</span>,
               ежегодная индексация;
             </li>
             <li>
