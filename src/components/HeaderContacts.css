@@ -10,6 +10,10 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Тень для лучшей читаемости */
 }
 
+header-contacts.about-page {
+  margin-right: 40px; /* Примерное значение, подберите под ваш дизайн */
+}
+
 .contact-link {
   font-size: 0.9rem;
   display: flex;
@@ -61,6 +65,9 @@
     display: flex;
     justify-content: center;
 
-    margin: 8px 82px 4px 0px;
+    margin: 8px 130px 4px 0px;
+  }
+  .header-contacts.about-page {
+    margin: 8px 10px 4px 0px; /* Уменьшаем правый отступ для about-страницы */
   }
 }

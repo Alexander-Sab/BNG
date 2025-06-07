@@ -21,20 +21,19 @@ function App() {
       <div className="App">
         <Background>
           <div className="app-container">
-            <HeaderContacts />
             <Sidebar />
-
             <div className="main-content-area">
               <Routes>
                 <Route
                   index
                   element={
                     <>
+                      <HeaderContacts />{" "}
+                      {/* На главной странице без модификаций */}
                       <Header />
                       <MainContent />
                       <MapComponent />
                       <ContactInfo />
-                      {/* Добавляем Footer здесь */}
                     </>
                   }
                 />
@@ -42,8 +41,9 @@ function App() {
                   path="/about"
                   element={
                     <>
+                      <HeaderContacts isAboutPage={true} />{" "}
+                      {/* Модифицированная версия */}
                       <AboutPage />
-                      {/* И здесь, если нужно в about */}
                     </>
                   }
                 />
