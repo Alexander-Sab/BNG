@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet";
 import "./Map.css";
 
 export default function YandexMap() {
@@ -93,6 +94,49 @@ export default function YandexMap() {
 
   return (
     <div className="map-wrapper">
+      {/* SEO-метаданные для карты и локации */}
+      <Helmet>
+        <meta
+          name="description"
+          content="Расположение подразделения Росгвардии в СЗАО Москвы: ул. Тушинская 9к3, 5 минут от метро и МЦД Тушинская. Контакты и схема проезда."
+        />
+        <meta
+          property="og:title"
+          content="Как добраться в подразделение Росгвардии в Тушино | Схема проезда"
+        />
+        <meta
+          property="og:description"
+          content="Точный адрес и карта проезда в МОВО по СЗАО: ул. Тушинская 9к3, рядом с метро Тушинская. График работы: 9:00-18:00"
+        />
+        <meta
+          name="keywords"
+          content="росгвардия тушино адрес, мово по сзао как проехать, метро тушинская росгвардия, 
+          ул тушинская 9к3, мцд тушинская внг рф, расположение подразделения внг, 
+          схема проезда в росгвардию сзао, контакты мово тушино"
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "GovernmentOffice",
+              "name": "МОВО по СЗАО ФГКУ УВО ВНГ России",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ул. Тушинская, дом 9, корпус 3",
+                "addressLocality": "Москва",
+                "addressRegion": "СЗАО"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "55.826124",
+                "longitude": "37.448905"
+              },
+              "openingHours": "Mo-Fr 09:00-18:00",
+              "publicAccess": false
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="mesto">
         <h3 className="mesto-m">месторасположение подразделения</h3>
         <h4>адрес: г. Москва ул. Тушинская 9, к.3</h4>
