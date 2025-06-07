@@ -1,11 +1,14 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© Федеральная служба войск национальной гвардии Российской Федерации, 2025</p>
+        <p>
+          © Федеральная служба войск национальной гвардии Российской Федерации,
+          2025
+        </p>
       </div>
     </footer>
   );

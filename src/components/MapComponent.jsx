@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
-import './Map.css';
+import { useEffect, useRef, useState } from "react";
+import "./Map.css";
 
 export default function YandexMap() {
   const mapRef = useRef(null);
   const [mapError, setMapError] = useState(null);
-  const apiKey = '2f51a76b-eabf-43ec-b650-88658b1aabd5';
+  const apiKey = "2f51a76b-eabf-43ec-b650-88658b1aabd5";
 
   useEffect(() => {
     let ymapsScript = null;
@@ -12,7 +12,7 @@ export default function YandexMap() {
 
     const initMap = () => {
       if (!window.ymaps || !window.ymaps.Map) {
-        setMapError('API Яндекс.Карт не загрузилось корректно');
+        setMapError("API Яндекс.Карт не загрузилось корректно");
         return;
       }
 
@@ -20,24 +20,24 @@ export default function YandexMap() {
         mapInstance = new window.ymaps.Map(mapRef.current, {
           center: [55.826124, 37.448905],
           zoom: 15,
-          controls: ['zoomControl']
+          controls: ["zoomControl"],
         });
 
         const placemark = new window.ymaps.Placemark(
           [55.826124, 37.448905],
           {
-            hintContent: 'Федеральная Служба ВНГ РФ',
-            balloonContent: 'Адрес штаб-квартиры'
+            hintContent: "Федеральная Служба ВНГ РФ",
+            balloonContent: "Адрес штаб-квартиры",
           },
           {
-            preset: 'islands#redGovernmentIcon'
+            preset: "islands#redGovernmentIcon",
           }
         );
 
         mapInstance.geoObjects.add(placemark);
       } catch (error) {
-        setMapError('Ошибка создания карты: ' + error.message);
-        console.error('Map init error:', error);
+        setMapError("Ошибка создания карты: " + error.message);
+        console.error("Map init error:", error);
       }
     };
 
@@ -59,20 +59,20 @@ export default function YandexMap() {
     }
 
     // Загрузка скрипта, если Яндекс.Карты еще не загружены
-    ymapsScript = document.createElement('script');
+    ymapsScript = document.createElement("script");
     ymapsScript.src = `https://api-maps.yandex.ru/2.1/?apikey=${apiKey}&lang=ru_RU`;
     ymapsScript.async = true;
-    
+
     ymapsScript.onload = () => {
       if (!window.ymaps) {
-        setMapError('API Яндекс.Карт не загрузилось');
+        setMapError("API Яндекс.Карт не загрузилось");
         return;
       }
       window.ymaps.ready(initMap);
     };
 
     ymapsScript.onerror = () => {
-      setMapError('Ошибка загрузки API Яндекс.Карт');
+      setMapError("Ошибка загрузки API Яндекс.Карт");
     };
 
     document.head.appendChild(ymapsScript);
