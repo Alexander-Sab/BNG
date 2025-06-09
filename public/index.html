@@ -35,14 +35,30 @@
         "@context": "https://schema.org",
         "@type": "JobPosting",
         "title": "Полицейский в неведомственной охране",
+        "description": "Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Обязанности: охрана общественного порядка, обеспечение безопасности объектов. Требования: возраст от 18 лет, отсутствие судимости, годность по состоянию здоровья.", // Добавлено
+        "datePosted": "2025-06-10", // Добавлено (используйте актуальную дату)
         "hiringOrganization": {
           "@type": "Organization",
-          "name": "ФСВНГ РФ"
+          "name": "ФСВНГ РФ",
+          "sameAs": "https://росгвардия-работа.рф/" // Рекомендуется добавить
         },
         "jobLocation": {
           "@type": "Place",
           "address": {
-            "addressLocality": "Москва"
+            "@type": "PostalAddress",
+            "addressLocality": "Москва",
+            "streetAddress": "ул. Примерная, 123" // Уточните адрес
+          }
+        },
+        "employmentType": "FULL_TIME", // Рекомендуется добавить
+        "baseSalary": {
+          // Рекомендуется добавить
+          "@type": "MonetaryAmount",
+          "currency": "RUB",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 50000,
+            "unitText": "MONTH"
           }
         }
       }

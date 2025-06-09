@@ -52,20 +52,45 @@ export default function Header() {
     <div className="about-page">
       {/* SEO-метаданные */}
       <Helmet>
-        <title>
-          Работа в Росгвардии Москва - Вакансии в неведомственной охране
-        </title>
-        <meta
-          name="description"
-          content="Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Открытые вакансии: полицейские, водители в неведомственной охране. Официальное трудоустройство, соцпакет."
-        />
-        <meta
-          name="keywords"
-          content="работа росгвардия, вакансии москва, неведомственная охрана, служба внг рф, полицейский вакансии, водитель росгвардия, 
-    работа Северо-Запад Москвы, работа СЗАО, работа рядом с метро Тушино, работа рядом с МЦД Тушино, 
-    работа в МОВО по СЗАО, ФГКУ УВО ВНГ России по Москве, вакансии внг в Тушино, 
-    работа рядом с метро, служба в росгвардии СЗАО"
-        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            title: "Полицейский в неведомственной охране",
+            description:
+              "Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Обязанности: охрана общественного порядка, патрулирование территории, реагирование на правонарушения. Требования: гражданство РФ, возраст от 18 лет, отсутствие судимости, прохождение военно-врачебной комиссии.",
+            datePosted: "2025-06-10",
+            validThrough: "2025-11-10", // Дата, до которой вакансия актуальна
+            employmentType: "FULL_TIME", // Тип занятости
+            hiringOrganization: {
+              "@type": "Organization",
+              name: "ФСВНГ РФ",
+              sameAs: "https://росгвардия-работа.рф/",
+            },
+            jobLocation: {
+              "@type": "Place",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "ул. Тушинская 9 к 3", // Точный адрес
+                addressLocality: "Москва",
+                addressRegion: "Москва", // Регион (обязательно)
+                addressCountry: "RU", // Код страны (ISO 3166-1 alpha-2)
+                postalCode: "shura.saprykin.88@mail.ru", // Почтовый индекс (рекомендуется)
+              },
+            },
+            baseSalary: {
+              "@type": "MonetaryAmount",
+              currency: "RUB",
+              value: {
+                "@type": "QuantitativeValue",
+                minValue: 50000,
+                maxValue: 80000,
+                unitText: "MONTH",
+              },
+            },
+            jobLocationType: "TELECOMMUTE", // Или "ON_SITE" если работа на месте
+          })}
+        </script>
       </Helmet>
       <header className="header">
         {/* Добавляем иконку орла по центру */}
