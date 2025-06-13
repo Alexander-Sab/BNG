@@ -92,7 +92,6 @@ export default function Header() {
                 unitText: "MONTH",
               },
             },
-            jobLocationType: "ON_SITE", // Изменено с "TELECOMMUTE" на "ON_SITE" для работы на месте
           })}
         </script>
       </Helmet>
