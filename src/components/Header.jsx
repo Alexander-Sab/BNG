@@ -60,8 +60,8 @@ export default function Header() {
             description:
               "Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Обязанности: охрана общественного порядка, патрулирование территории, реагирование на правонарушения. Требования: гражданство РФ, возраст от 18 лет, отсутствие судимости, прохождение военно-врачебной комиссии.",
             datePosted: "2025-06-10",
-            validThrough: "2025-11-10", // Дата, до которой вакансия актуальна
-            employmentType: "FULL_TIME", // Тип занятости
+            validThrough: "2025-11-10",
+            employmentType: "FULL_TIME",
             hiringOrganization: {
               "@type": "Organization",
               name: "ФСВНГ РФ",
@@ -71,12 +71,16 @@ export default function Header() {
               "@type": "Place",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "ул. Тушинская 9 к 3", // Точный адрес
+                streetAddress: "ул. Тушинская 9 к 3",
                 addressLocality: "Москва",
-                addressRegion: "Москва", // Регион (обязательно)
-                addressCountry: "RU", // Код страны (ISO 3166-1 alpha-2)
-                postalCode: "shura.saprykin.88@mail.ru", // Почтовый индекс (рекомендуется)
+                addressRegion: "Москва",
+                addressCountry: "RU",
+                postalCode: "125362",
               },
+            },
+            applicantLocationRequirements: {
+              "@type": "Country",
+              name: "Российская Федерация",
             },
             baseSalary: {
               "@type": "MonetaryAmount",
@@ -88,7 +92,7 @@ export default function Header() {
                 unitText: "MONTH",
               },
             },
-            jobLocationType: "TELECOMMUTE", // Или "ON_SITE" если работа на месте
+            jobLocationType: "ON_SITE", // Изменено с "TELECOMMUTE" на "ON_SITE" для работы на месте
           })}
         </script>
       </Helmet>
