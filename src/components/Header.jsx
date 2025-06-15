@@ -8,6 +8,7 @@ import "./Header.css";
 
 export default function Header() {
   const navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollEndTimer = useRef(null);
   const animationTimer = useRef(null);
@@ -52,11 +53,12 @@ export default function Header() {
     <div className="about-page">
       {/* SEO-метаданные */}
       <Helmet>
+        <link rel="canonical" href="https://росгвардия-работа.рф/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "JobPosting",
-            title: "Полицейский в неведомственной охране",
+            title: "Росгвардия-работа",
             description:
               "Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Обязанности: охрана общественного порядка, патрулирование территории, реагирование на правонарушения. Требования: гражданство РФ, возраст от 18 лет, отсутствие судимости, прохождение военно-врачебной комиссии.",
             datePosted: "2025-06-10",
@@ -64,7 +66,7 @@ export default function Header() {
             employmentType: "FULL_TIME",
             hiringOrganization: {
               "@type": "Organization",
-              name: "ФСВНГ РФ",
+              name: "Росгвардия-работа.рф",
               sameAs: "https://росгвардия-работа.рф/",
             },
             jobLocation: {
