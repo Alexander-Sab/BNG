@@ -8,6 +8,7 @@ import "./Header.css";
 
 export default function Header() {
   const navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollEndTimer = useRef(null);
   const animationTimer = useRef(null);
@@ -52,20 +53,49 @@ export default function Header() {
     <div className="about-page">
       {/* SEO-метаданные */}
       <Helmet>
-        <title>
-          Работа в Росгвардии Москва - Вакансии в неведомственной охране
-        </title>
-        <meta
-          name="description"
-          content="Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Открытые вакансии: полицейские, водители в неведомственной охране. Официальное трудоустройство, соцпакет."
-        />
-        <meta
-          name="keywords"
-          content="работа росгвардия, вакансии москва, неведомственная охрана, служба внг рф, полицейский вакансии, водитель росгвардия, 
-    работа Северо-Запад Москвы, работа СЗАО, работа рядом с метро Тушино, работа рядом с МЦД Тушино, 
-    работа в МОВО по СЗАО, ФГКУ УВО ВНГ России по Москве, вакансии внг в Тушино, 
-    работа рядом с метро, служба в росгвардии СЗАО"
-        />
+        <link rel="canonical" href="https://росгвардия-работа.рф/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            title: "Росгвардия-работа",
+            description:
+              "Федеральная служба войск национальной гвардии РФ приглашает на службу в Москве. Обязанности: охрана общественного порядка, патрулирование территории, реагирование на правонарушения. Требования: гражданство РФ, возраст от 18 лет, отсутствие судимости, прохождение военно-врачебной комиссии.",
+            datePosted: "2025-06-10",
+            validThrough: "2025-11-10",
+            employmentType: "FULL_TIME",
+            hiringOrganization: {
+              "@type": "Organization",
+              name: "Росгвардия-работа.рф",
+              sameAs: "https://росгвардия-работа.рф/",
+            },
+            jobLocation: {
+              "@type": "Place",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "ул. Тушинская 9 к 3",
+                addressLocality: "Москва",
+                addressRegion: "Москва",
+                addressCountry: "RU",
+                postalCode: "125362",
+              },
+            },
+            applicantLocationRequirements: {
+              "@type": "Country",
+              name: "Российская Федерация",
+            },
+            baseSalary: {
+              "@type": "MonetaryAmount",
+              currency: "RUB",
+              value: {
+                "@type": "QuantitativeValue",
+                minValue: 50000,
+                maxValue: 80000,
+                unitText: "MONTH",
+              },
+            },
+          })}
+        </script>
       </Helmet>
       <header className="header">
         {/* Добавляем иконку орла по центру */}

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +12,17 @@ const Sidebar = () => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (isOpen && !e.target.closest('.sidebar') && !e.target.closest('.sidebar-toggle')) {
+      if (
+        isOpen &&
+        !e.target.closest(".sidebar") &&
+        !e.target.closest(".sidebar-toggle")
+      ) {
         setIsOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
   return (
@@ -27,25 +31,60 @@ const Sidebar = () => {
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
 
-      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar-content">
-          <Link to="/about" className="sidebar-link" onClick={() => setIsOpen(false)}>
-        <h2>О нашей работе</h2>
-        </Link>
-          
+          <Link
+            to="/about"
+            className="sidebar-link"
+            onClick={() => setIsOpen(false)}
+          >
+            <h2>О нашей работе</h2>
+          </Link>
+
           <h3>Контакты</h3>
           <ul className="contact-list">
-            <li>Телефон: <a href="tel:+79250571946">+7 925 057-19-46</a></li>
-            <li>Telegram: 
-              <a className="cont-a" href="https://t.me/Aleksandr_Saprykin" target="_blank" rel="noopener noreferrer">
-                 @Aleksandr_Saprykin
+            <li>
+              Телефон: <a href="tel:+79250571946">+7 925 057-19-46</a>
+            </li>
+            <li>
+              Telegram:
+              <a
+                className="cont-a"
+                href="https://t.me/Aleksandr_Saprykin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @Aleksandr_Saprykin
               </a>
             </li>
-            <li>Email: <a href="mailto:info@company.com">info@company.com</a></li>
+            <li>
+              Email: <a href="mailto:info@company.com">info@company.com</a>
+            </li>
           </ul>
-          
+
           <h3>Адрес:</h3>
           <p>г. Москва, ул. Тушинская, д. 9, корпус 3</p>
+          {/* Добавленные ссылки */}
+          <div className="official-links">
+            <a
+              href="https://77uvo.rosguard.gov.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="official-link"
+              title="Официальный сайт Управления"
+            >
+              Управление вневедомственной охраны по г. Москве
+            </a>
+            <a
+              href="https://szao.mos.ru/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="official-link"
+              title="Официальный сайт Префектуры"
+            >
+              Префектура Северо-Западного административного округа г. Москвы
+            </a>
+          </div>
         </div>
       </div>
     </>
